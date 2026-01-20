@@ -1,3 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","6846","TC_01: Click Sign In without entering credentials","Chrome","2026-01-16","passed","2026-01-16","Login - Negative Scenarios","tests\login\loginNegativeOperation.spec.js","",""
-"","21424","TC_02: Invalid email format","Chrome","2026-01-16","failed","2026-01-16","Login - Negative Scenarios","tests\login\loginNegativeOperation.spec.js","",""

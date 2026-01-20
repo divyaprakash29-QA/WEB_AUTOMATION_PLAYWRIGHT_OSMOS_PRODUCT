@@ -1,0 +1,34 @@
+{
+  "name": "osmos-product-web-automation-playwright",
+  "version": "1.0.0",
+  "description": "Playwright automation framework for OSMOS product",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "if exist reports\\allure-results rmdir /s /q reports\\allure-results && if exist reports\\allure-report rmdir /s /q reports\\allure-report",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:smoke": "playwright test tests/smoke",
+    "test:regression": "playwright test tests/regression",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report reports/html-report",
+    "allure:clean": "if exist reports\\allure-results rmdir /s /q reports\\allure-results && if exist reports\\allure-report rmdir /s /q reports\\allure-report",
+    "preallure:generate": "if exist reports\\allure-report rmdir /s /q reports\\allure-report",
+    "allure:generate": "allure generate reports/allure-results -o reports/allure-report --clean",
+    "allure:open": "allure open reports/allure-report",
+    "allure:report": "npm run allure:clean && npm run allure:generate && npm run allure:open",
+    "test:allure": "npm run allure:clean && set TEST_ENV=qa && playwright test --headed && npm run allure:generate && npm run allure:open"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "allure-playwright": "^2.15.0",
+    "dotenv": "^16.3.1"
+  }
+}

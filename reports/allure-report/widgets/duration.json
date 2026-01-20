@@ -1,0 +1,1 @@
+[{"uid":"8d035233934ea6b7","name":"TC_01: Click Sign In without entering credentials","time":{"start":1768543001031,"stop":1768543007877,"duration":6846},"status":"passed","severity":"normal"},{"uid":"58d201dc37b06a24","name":"TC_02: Invalid email format","time":{"start":1768543007887,"stop":1768543029311,"duration":21424},"status":"failed","severity":"normal"}]

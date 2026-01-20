@@ -1,0 +1,28 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e7]:
+  - generic [ref=e9]: Let's get started
+  - generic [ref=e11]:
+    - generic [ref=e12]:
+      - generic [ref=e14]:
+        - generic [ref=e17]:
+          - text: Email
+          - generic [ref=e18]: "*"
+        - textbox "Enter email address" [ref=e21]: divyaprakash.singh@onlinesales.ai
+      - generic [ref=e24]:
+        - generic [ref=e27]:
+          - text: Password
+          - generic [ref=e28]: "*"
+        - generic [ref=e30]:
+          - textbox "Enter password" [active] [ref=e31]: qwerty@123
+          - generic [ref=e33] [cursor=pointer]: 
+    - generic [ref=e36]:
+      - button "Forgot Password?" [ref=e38] [cursor=pointer]:
+        - generic [ref=e39]: Forgot Password?
+      - button "Sign In" [ref=e40] [cursor=pointer]:
+        - generic [ref=e41]: Sign In
+  - button " Sign in with Google" [ref=e43] [cursor=pointer]:
+    - generic [ref=e44]: 
+    - text: Sign in with Google
+```

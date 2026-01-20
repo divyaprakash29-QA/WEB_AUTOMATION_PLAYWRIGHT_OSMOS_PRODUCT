@@ -1,0 +1,2 @@
+Logged in using token successfully!
+Current URL: https://qa-marketplace.osmos.ai/login?redirect_url=%2Fcampaigns%2FproductAds

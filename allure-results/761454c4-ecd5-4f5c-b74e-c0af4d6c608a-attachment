@@ -1,0 +1,64 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e7]:
+    - generic [ref=e9]: Let's get started
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e14]:
+          - generic [ref=e17]:
+            - text: Email
+            - generic [ref=e18]: "*"
+          - textbox "Enter email address" [ref=e21]: divyaprakash.singh@onlinesales.ai
+        - generic [ref=e24]:
+          - generic [ref=e27]:
+            - text: Password
+            - generic [ref=e28]: "*"
+          - generic [ref=e30]:
+            - textbox "Enter password" [ref=e31]: qwerty@123
+            - generic [ref=e33] [cursor=pointer]: 
+      - generic [ref=e36]:
+        - button "Forgot Password?" [ref=e38] [cursor=pointer]:
+          - generic [ref=e39]: Forgot Password?
+        - button "Sign In" [ref=e40] [cursor=pointer]:
+          - generic [ref=e41]: Sign In
+    - button " Sign in with Google" [ref=e43] [cursor=pointer]:
+      - generic [ref=e44]: 
+      - text: Sign in with Google
+  - iframe [active] [ref=e48]:
+    - dialog [ref=f5e3]:
+      - generic [ref=f5e4]:
+        - generic [ref=f5e7]:
+          - text: Select all squares with
+          - strong [ref=f5e8]: traffic lights
+          - generic [ref=f5e9]: If there are none, click skip
+        - table [ref=f5e12]:
+          - rowgroup [ref=f5e13]:
+            - row [ref=f5e14]:
+              - button [ref=f5e15]
+              - button [ref=f5e18]
+              - button [ref=f5e21]
+              - button [ref=f5e24]
+            - row [ref=f5e27]:
+              - button [ref=f5e28]
+              - button [ref=f5e31]
+              - button [ref=f5e34]
+              - button [ref=f5e37]
+            - row [ref=f5e40]:
+              - button [ref=f5e41]
+              - button [ref=f5e44]
+              - button [ref=f5e47]
+              - button [ref=f5e50]
+            - row [ref=f5e53]:
+              - button [ref=f5e54]
+              - button [ref=f5e57]
+              - button [ref=f5e60]
+              - button [ref=f5e63]
+      - generic [ref=f5e69]:
+        - generic [ref=f5e70]:
+          - button "Get a new challenge" [ref=f5e72] [cursor=pointer]
+          - button "Get an audio challenge" [ref=f5e74] [cursor=pointer]
+          - button "Help" [ref=f5e76] [cursor=pointer]
+        - button "Skip" [ref=f5e78] [cursor=pointer]
+```

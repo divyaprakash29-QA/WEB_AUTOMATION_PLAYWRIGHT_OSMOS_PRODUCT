@@ -1,0 +1,29 @@
+# Node modules
+node_modules/
+
+# Test reports and results
+reports/
+test-results/
+allure-results/
+playwright-report/
+
+# Screenshots
+screenshots/
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

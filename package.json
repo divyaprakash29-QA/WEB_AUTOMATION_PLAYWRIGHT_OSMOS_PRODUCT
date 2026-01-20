@@ -5,19 +5,19 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "pretest": "if exist reports\\allure-results rmdir /s /q reports\\allure-results && if exist reports\\allure-report rmdir /s /q reports\\allure-report",
+    "pretest": "node -e \"const fs = require('fs'); ['reports/allure-results', 'reports/allure-report'].forEach(dir => { try { fs.rmSync(dir, { recursive: true, force: true }); } catch(e) { /* ignore if dir doesn't exist */ } })\"",
     "test": "playwright test",
     "test:headed": "playwright test --headed",
     "test:smoke": "playwright test tests/smoke",
     "test:regression": "playwright test tests/regression",
     "test:debug": "playwright test --debug",
     "report": "playwright show-report reports/html-report",
-    "allure:clean": "if exist reports\\allure-results rmdir /s /q reports\\allure-results && if exist reports\\allure-report rmdir /s /q reports\\allure-report",
-    "preallure:generate": "if exist reports\\allure-report rmdir /s /q reports\\allure-report",
+    "allure:clean": "node -e \"const fs = require('fs'); ['reports/allure-results', 'reports/allure-report'].forEach(dir => { try { fs.rmSync(dir, { recursive: true, force: true }); } catch(e) { /* ignore if dir doesn't exist */ } })\"",
+    "preallure:generate": "node -e \"const fs = require('fs'); try { fs.rmSync('reports/allure-report', { recursive: true, force: true }); } catch(e) { /* ignore if dir doesn't exist */ }\"",
     "allure:generate": "allure generate reports/allure-results -o reports/allure-report --clean",
     "allure:open": "allure open reports/allure-report",
     "allure:report": "npm run allure:clean && npm run allure:generate && npm run allure:open",
-    "test:allure": "npm run allure:clean && set TEST_ENV=qa && playwright test --headed && npm run allure:generate && npm run allure:open"
+    "test:allure": "npm run allure:clean && playwright test --headed && npm run allure:generate && npm run allure:open"
   },
   "keywords": [
     "playwright",
